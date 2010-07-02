@@ -19,6 +19,8 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{carrierwave}
   s.rubygems_version = %q{1.3.5}
   s.specification_version = 3
+  
+  s.add_dependency("activesupport", [">= 2.3.3"])
 
   s.add_development_dependency("rspec", [">= 1.2.8"])
   s.add_development_dependency("cucumber", [">= 0.3.96"])
@@ -32,7 +34,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency("rmagick", [">= 2.10.0"])
   s.add_development_dependency("RubyInline", [">= 2.10.0"])
   s.add_development_dependency("image_science", [">= 1.2.1"])
-  s.add_development_dependency("mini_magick", [">= 1.2.5"])
+  # Temporarily using this gem instead until the mini_magick is 1.9 compatible
+  s.add_development_dependency("hcatlin-mini_magick", [">= 1.3"])
   s.add_development_dependency("mongoid", [">= 0.10.4"])
   s.add_development_dependency("aws-s3", [">= 0.6.2"])
   s.add_development_dependency("timecop", [">= 0.3.4"])
