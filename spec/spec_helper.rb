@@ -5,6 +5,9 @@ $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
 require 'rubygems'
 
+require "bundler"
+Bundler.setup
+
 require 'tempfile'
 #require 'ruby-debug'
 require 'spec'
