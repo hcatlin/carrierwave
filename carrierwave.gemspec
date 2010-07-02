@@ -20,11 +20,11 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.specification_version = 3
   
-  s.add_dependency("activesupport", [">= 2.3.3"])
+  s.add_dependency("activesupport", [">= 3.0.0.beta4"])
 
   s.add_development_dependency("rspec", [">= 1.2.8"])
   s.add_development_dependency("cucumber", [">= 0.3.96"])
-  s.add_development_dependency("activerecord", [">= 2.3.3"])
+  s.add_development_dependency("activerecord", [">= 3.0.0.beta4"])
   s.add_development_dependency("sqlite3-ruby", [">= 1.2.5"])
   s.add_development_dependency("dm-core", [">= 1.0.0"])
   s.add_development_dependency("dm-validations", [">= 1.0.0"])
