@@ -2,7 +2,7 @@ module CarrierWave
 
   module Uploader
     module Configuration
-      extend ActiveSupport::Concern
+      extend ::CarrierWave::Concern
 
       included do
         add_config :root

@@ -5,7 +5,7 @@ require 'net/http'
 module CarrierWave
   module Uploader
     module Download
-      extend ActiveSupport::Concern
+      extend ::CarrierWave::Concern
 
       include CarrierWave::Uploader::Callbacks
       include CarrierWave::Uploader::Configuration

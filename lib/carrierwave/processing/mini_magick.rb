@@ -56,7 +56,7 @@ module CarrierWave
   #
   #
   module MiniMagick
-    extend CarrierWave::Concern
+    extend ::CarrierWave::Concern
 
     module ClassMethods
       def convert(format)

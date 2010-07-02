@@ -4,7 +4,7 @@ require "image_science"
 
 module CarrierWave
   module ImageScience
-    extend CarrierWave::Concern
+    extend ::CarrierWave::Concern
 
     module ClassMethods
       def resize_to_limit(width, height)

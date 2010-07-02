@@ -3,7 +3,7 @@
 module CarrierWave
   module Uploader
     module Store
-      extend ActiveSupport::Concern
+      extend ::CarrierWave::Concern
 
       include CarrierWave::Uploader::Callbacks
       include CarrierWave::Uploader::Configuration

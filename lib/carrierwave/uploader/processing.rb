@@ -3,7 +3,7 @@
 module CarrierWave
   module Uploader
     module Processing
-      extend ActiveSupport::Concern
+      extend ::CarrierWave::Concern
 
       include CarrierWave::Uploader::Callbacks
 

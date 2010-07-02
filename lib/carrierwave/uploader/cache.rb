@@ -21,7 +21,7 @@ module CarrierWave
 
   module Uploader
     module Cache
-      extend ActiveSupport::Concern
+      extend ::CarrierWave::Concern
 
       include CarrierWave::Uploader::Callbacks
       include CarrierWave::Uploader::Configuration

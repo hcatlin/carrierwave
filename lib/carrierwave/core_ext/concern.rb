@@ -6,7 +6,7 @@
 #
 
 module CarrierWave
-  module CarrierWave::Concern
+  module Concern
     def self.extended(base)
       base.instance_variable_set("@_dependencies", [])
     end
