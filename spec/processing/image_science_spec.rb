@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.expand_path('../../spec_helper', __FILE__)
 
 # Seems like ImageScience doesn't work on 1.9
 unless RUBY_VERSION =~ /^1\.9/
