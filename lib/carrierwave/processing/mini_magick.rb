@@ -56,7 +56,7 @@ module CarrierWave
   #
   #
   module MiniMagick
-    extend ActiveSupport::Concern
+    extend CarrierWave::Concern
 
     module ClassMethods
       def convert(format)
@@ -253,8 +253,19 @@ module CarrierWave
       image = yield(image)
       image.write(current_path)
       ::MiniMagick::Image.from_file(current_path)
-    rescue ::MiniMagick::MiniMagickError => e
+    rescue ::MiniMagick::MiniMagickError, ::MiniMagick::Error => e
       raise CarrierWave::ProcessingError.new("Failed to manipulate with MiniMagick, maybe it is not an image? Original Error: #{e}")
+    end
+    
+    # These two classes are created to ensure compatibility
+    # between various versions of MiniMagick
+    #
+    # Hacky, but effective.
+    if !defined?(::MiniMagick::Error)
+      class ::MiniMagick::Error < RuntimeError; end
+    end
+    if !defined?(::MiniMagick::MiniMagickError)
+      class ::MiniMagick::MiniMagickError < RuntimeError; end
     end
 
   end # MiniMagick
