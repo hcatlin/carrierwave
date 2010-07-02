@@ -68,7 +68,7 @@ module CarrierWave
   # http://rubyforge.org/forum/forum.php?thread_id=1374&forum_id=1618
   #
   module RMagick
-    extend ActiveSupport::Concern
+    extend CarrierWave::Concern
 
     module ClassMethods
       def convert(format)

@@ -2,9 +2,9 @@
 
 require 'fileutils'
 require 'carrierwave/core_ext/file'
+require 'carrierwave/core_ext/concern'
 require 'active_support/core_ext/object/blank'
 require 'active_support/core_ext/class/inheritable_attributes'
-require 'active_support/concern'
 
 module CarrierWave
 
