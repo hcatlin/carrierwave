@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
 
+require 'date'
+
 Gem::Specification.new do |s|
   s.name = "carrierwave"
   s.version = "0.4.4"
@@ -29,7 +31,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency("sequel", [">= 3.2.0"])
   s.add_development_dependency("rmagick", [">= 2.10.0"])
   s.add_development_dependency("RubyInline", [">= 2.10.0"])
-  s.add_development_dependency("image_science", [">= 2.10.0"])
+  s.add_development_dependency("image_science", [">= 1.2.1"])
   s.add_development_dependency("mini_magick", [">= 1.2.5"])
   s.add_development_dependency("mongoid", [">= 0.10.4"])
   s.add_development_dependency("aws-s3", [">= 0.6.2"])
